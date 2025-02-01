@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WiredCoffee.ConsoleApp", "WiredCoffee.ConsoleApp\WiredCoffee.ConsoleApp.csproj", "{6765DA09-0A4E-4B01-8B9A-00AB4BDE0363}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WiredCoffee.Generators", "WiredCoffee.Generators\WiredCoffee.Generators.csproj", "{9971311C-7BD9-4E1D-BC84-34AA40106559}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6765DA09-0A4E-4B01-8B9A-00AB4BDE0363}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6765DA09-0A4E-4B01-8B9A-00AB4BDE0363}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6765DA09-0A4E-4B01-8B9A-00AB4BDE0363}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6765DA09-0A4E-4B01-8B9A-00AB4BDE0363}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9971311C-7BD9-4E1D-BC84-34AA40106559}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9971311C-7BD9-4E1D-BC84-34AA40106559}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9971311C-7BD9-4E1D-BC84-34AA40106559}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9971311C-7BD9-4E1D-BC84-34AA40106559}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
