@@ -1,2 +1,2 @@
 # C# Source Generators Demo
-This repo
+This repository provides some examples on how to use C# source generators.
