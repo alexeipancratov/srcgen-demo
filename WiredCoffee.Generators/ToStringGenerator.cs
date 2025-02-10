@@ -1,4 +1,5 @@
-﻿using Microsoft.CodeAnalysis;
+﻿using System.Text;
+using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 
 namespace WiredCoffee.Generators;
@@ -19,9 +20,22 @@ public class ToStringGenerator : IIncrementalGenerator
 
     private static void Execute(SourceProductionContext context, ClassDeclarationSyntax classDeclarationSyntax)
     {
+        const string namespaceName = "NotYetImplemented";
         var className = classDeclarationSyntax.Identifier.Text;
-        var fileName = $"{className}.g.cs"; // .g. is a convention for generated files in C#
+        var fileName = $"{namespaceName}.{className}.g.cs"; // .g. is a convention for generated files in C#
         
-        context.AddSource(fileName, "// Generated file!");
+        var stringBuilder = new StringBuilder();
+        stringBuilder.AppendLine($@"namespace {namespaceName}
+{{
+    public partial class {className}
+    {{
+        public override string ToString()
+        {{
+            return ""Not yet implemented"";
+        }}
+    }}
+}}");
+        
+        context.AddSource(fileName, stringBuilder.ToString());
     }
 }
